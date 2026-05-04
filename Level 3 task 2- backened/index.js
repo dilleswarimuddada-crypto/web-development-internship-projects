@@ -10,6 +10,10 @@ app.get("/", (req, res) => {
   res.send("Backend is running");
 });
 
+app.get("/test", (req, res) => {
+  res.json({ message: "API working" });
+});
+
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
 
